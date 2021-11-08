@@ -1,7 +1,33 @@
 {"intents": [
     {
         "tag": "order food",
-        "patterns": ["order food", "buy food"],
-        "response": ["Which type of food do you want?"]
+        "patterns": ["order food", "buy food","place order","to order","purchase"],
+        "response": ["Which categories of food do you want? Malay, Mamak, Beverage , Korean or Japanese?"]
+    },
+    {
+        "tag": "Malay",
+        "patterns": ["Malay"],
+        "response": ["Here is the menu of malay food"]
+    },
+    {
+        "tag": "Mamak",
+        "patterns": ["Mamak"],
+        "response": ["Here is the menu of mamak food"]
+    },
+    {
+        "tag": "Beverage",
+        "patterns": ["Beverage"],
+        "response": ["Here is the menu of beverage available"]
+    },
+    {
+        "tag": "Korean",
+        "patterns": ["Korean"],
+        "response": ["Here is the menu of korean food"]
+    },
+    {
+        "tag": "Japanese",
+        "patterns": ["Japanese"],
+        "response": ["Here is the menu of Japanese food"]
     }
+    
 ]}
