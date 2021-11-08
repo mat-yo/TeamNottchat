@@ -5,4 +5,4 @@ greet()
 
 while True:
     message = input("")
-    print(message)
+    print("test")
