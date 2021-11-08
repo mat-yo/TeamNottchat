@@ -45,6 +45,7 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent':classes[r[0]], 'probability': str(r[1])})
 
+    print(return_list)
     return return_list
 
 
@@ -62,7 +63,7 @@ greet()
 
 while True:
     message = input("")
-    ints = predict_class(message)
+    ints = predict_class(message.lower())
     res = get_response(ints, intents)
     
     print()
