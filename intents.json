@@ -1,32 +1,56 @@
 {"intents": [
     {
         "tag": "order food",
+<<<<<<< HEAD
         "patterns": ["order", "buy","place order","to order","purchase"],
+=======
+        "patterns": ["order food", "buy food","place order","to order","purchase"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Which categories of food do you want? Malay, Mamak, Beverage , Korean or Japanese?"]
     },
     {
         "tag": "Malay",
+<<<<<<< HEAD
         "patterns": ["malay","malay menu"],
+=======
+        "patterns": ["Malay"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Here is the menu of malay food"]
     },
     {
         "tag": "Mamak",
+<<<<<<< HEAD
         "patterns": ["mamak", "mamak menu"],
+=======
+        "patterns": ["Mamak"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Here is the menu of mamak food"]
     },
     {
         "tag": "Beverage",
+<<<<<<< HEAD
         "patterns": ["beverage","drinks","water","beverage menu"],
+=======
+        "patterns": ["Beverage"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Here is the menu of beverage available"]
     },
     {
         "tag": "Korean",
+<<<<<<< HEAD
         "patterns": ["korean"],
+=======
+        "patterns": ["Korean"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Here is the menu of korean food"]
     },
     {
         "tag": "Japanese",
+<<<<<<< HEAD
         "patterns": ["japanese"],
+=======
+        "patterns": ["Japanese"],
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
         "response": ["Here is the menu of Japanese food"]
     }
     

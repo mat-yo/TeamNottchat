@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import csv
 long_arr = []
 with open('food.csv', "rt", encoding='ascii') as infile:
@@ -30,3 +31,12 @@ print(mamak_food,"\n----------------")
 print(beverage,"\n----------------")
 print(korean_food,"\n----------------")
 print(japanese_food,"\n----------------")
+=======
+import pandas as pd
+
+df = pd.read_csv(r'D:/Team nottchat/food.csv')
+
+stall_name = df["stall_name"]
+
+print(stall_name)
+>>>>>>> 57a8fcc236822e5ad773e1669531a22f5b0f7a4c
