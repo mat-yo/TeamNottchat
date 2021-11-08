@@ -1,0 +1,7 @@
+{"intents": [
+    {
+        "tag": "order food",
+        "patterns": ["order food", "buy food"],
+        "response": ["Which type of food do you want?"]
+    }
+]}
