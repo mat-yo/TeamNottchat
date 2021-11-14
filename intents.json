@@ -1,7 +1,7 @@
 {"intents": [
         {
             "tag": "order food",
-            "patterns": ["order food", "buy","place order","to order","purchase"],
+            "patterns": ["order", "buy","place order","to order","purchase"],
             "response": ["Which categories of food do you want? Malay, Mamak, Beverage , Korean or Japanese?"]
         },
         {
@@ -34,29 +34,30 @@
             "patterns": ["What is the food available for delivery?","What is the food that can be delivered?"],
             "response": ["Here is the menu of food available for delivery"]
         },
+        
         {
             "tag": "Order status for delivery",
-            "patterns": ["I would like to know order status","Where is my food","Where's my food","Where are you?","order status"],
+            "patterns": ["I would like to know order status","Where is my food","Where's my food","Where are you?"],
             "response": ["Your rider is on the way , it will arrive in around 5 minutes","Your food is preparing.....","Rider already picked up your food and on the way to deliver the food to you"]
         },
         {
             "tag": "Order status for pick up",
-            "patterns": ["I would like to know is my food ready for pick up?","Is my food done prepared?","order status"],
+            "patterns": ["I would like to know is my food ready for pick up?","Is my food done prepared?"],
             "response": ["Your food already done, can pick up now","The restaurant is preparing your food, sorry for the inconvenience caused"]
         },
         {
             "tag": "Cancel order",
-            "patterns": ["I would like to cancel order","I dont want to order this food","Return money","cancel order"],
+            "patterns": ["I would like to cancel order","I dont want to order this food","Return money"],
             "response": ["Your order has been cancelled sucessfully, would you mind to tell us why you want to cancel order?","So sorry that the restaurant already prepared your food and your order can't be cancelled, if you need further assistance please contact 07-1234567"]
         },
         {
             "tag": "Payment method",
             "patterns": ["Cash on delivery","Debit card","Credit card"],
-            "response": ["Order confirmed!!! Thank you and have a nice day!"]
+            "response": ["Thank you and have a nice day!"]
         },
         {
             "tag": "About us",
-            "patterns": ["who we are","What do we do"],
+            "patterns": ["who we are","What do we do",],
             "response": ["We started with one goal in mind: to be the most convenient food delivery service in the country","We link you to the vendors for you to order a variety of prepared meals."]
         },
         {
@@ -72,67 +73,10 @@
         {
             "tag": "delivery",
             "patterns":["food available for delivery"],
-            "response": ["Nasi lemak (RM 2 ), Nasi goreng kampung (RM 6 ),
-            Nasi goreng tomyam (RM 6.5 ),
-            Nasi goreng ikan masin (RM 6.5 ),
-            Nasi goreng paprik (RM 7 ),
-            Nasi goreng USA (RM 7 ),
-            Nasi goreng pattaya (RM 7 ),
-            Nasi goreng biasa (RM 5 ),
-            Ikan goreng (RM 3.5 ),
-            Ayam goreng (RM 3 ),
-            Satay (RM 1.2 ),
-            Mee goreng (RM 5 ),
-            Maggi goreng (RM 5 ),
-            Maggi soup (RM 4 ),
-            Espresso (RM 6 ),
-            Hot Americano (RM 7 ),
-            Iced Americano (RM 8 ),
-            Hot Latte (RM 9 ),
-            Iced Latte (RM 10 ),
-            Hot Cappuccino (RM 9 ),
-            Ice Cappuccino (RM 10 ),
-            Hot Mocha (RM 9 ),
-            Iced Mocha (RM 10 ),
-            Tteok  (RM 2 ),
-            Kimchi  (RM 4 ),
-            Gimbap (RM 4.5 ),
-            Tteokbokki (RM 5 ),
-            Hobakjuk  (RM 6 ),
-            Ramyun (RM 6.5 ),
-            Kimchi Fried Rice (RM 7 ),
-            Bulgogi (RM 7 ),
-            Jjajangmyeon (RM 7 ),
-            Kongguksu (RM 7.5 ),
-            Japchae (RM 8 ),
-            Bulgogi with rice (RM 8 ),
-            Naengmyeon (RM 8.5 ),
-            Bibimbap (RM 9 ),
-            Sundubu Jjigae (RM 10 ),
-            Miso Soup (RM 1.5 ),
-            Chawanmushi (RM 1.5 ),
-            Gyoza (RM 5 ),
-            Tempura (RM 5 ),
-            Tamagoyaki (Egg Roll) (RM 1.5 ),
-            Teriyaki Chicken Bento (RM 8 ),
-            Teriyaki Vegetable Bento (RM 6.5 ),
-            Seafood Bento (RM 9 ),
-            Chicken Katsu Don (RM 8 ),
-            Tempura Soba (RM 7 ),
-            Chicken Yaki Soba (RM 7 ),
-            Vegetable Yaki Soba (RM 6 ),
-            Zaru Soba (RM 6 ),
-            Zaru Soba + Tempura (RM 7 ),
-            Tempura Udon (RM 7 ),
-            Chicken Yaki Udon (RM 7 ),
-            Vegetable Yaki Udon (RM 6 ),
-            Zaru Udon (RM 6 ),
-            Zaru Udon + Tempura (RM 7 ),
-            Chicken Teriyaki Lunch Set (Miso Soup) (RM 10 ),
-            Tempura Lunch Set (Miso Soup) (RM 9 ),
-            Vegetarian Lunch Set (Miso Soup) (RM 8 ),
-            Chicken Teriyaki Dinner Set (Chawanmushi) (RM 10 ),
-            Tempura Dinner Set (Chawanmushi) (RM 9 ),
-            Vegetarian Dinner Set (Chawanmushi) (RM 8 )"]
+            "response": ["Nasi lemak (RM 2 ), Nasi goreng kampung (RM 6 ), Nasi goreng tomyam (RM 6.5 ), Nasi goreng ikan masin (RM 6.5 ), Nasi goreng paprik (RM 7 ), Nasi goreng USA (RM 7 ), Nasi goreng pattaya (RM 7 ), Nasi goreng biasa (RM 5 ), Ikan goreng (RM 3.5 ), Ayam goreng (RM 3 ), Satay (RM 1.2 ), Mee goreng (RM 5 ), Maggi goreng (RM 5 ), Maggi soup (RM 4 ), Espresso (RM 6 ), Hot Americano (RM 7 ), Iced Americano (RM 8 ), Hot Latte (RM 9 ), Iced Latte (RM 10 ), Hot Cappuccino (RM 9 ), Ice Cappuccino (RM 10 ), Hot Mocha (RM 9 ), Iced Mocha (RM 10 ), Tteok  (RM 2 ), Kimchi  (RM 4 ), Gimbap (RM 4.5 ), Tteokbokki (RM 5 ), Hobakjuk  (RM 6 ), Ramyun (RM 6.5 ), Kimchi Fried Rice (RM 7 ), Bulgogi (RM 7 ), Jjajangmyeon (RM 7 ), Kongguksu (RM 7.5 ), Japchae (RM 8 ), Bulgogi with rice (RM 8 ), Naengmyeon (RM 8.5 ), Bibimbap (RM 9 ), Sundubu Jjigae (RM 10 ), Miso Soup (RM 1.5 ), Chawanmushi (RM 1.5 ), Gyoza (RM 5 ), Tempura (RM 5 ), Tamagoyaki (Egg Roll) (RM 1.5 ), Teriyaki Chicken Bento (RM 8 ), Teriyaki Vegetable Bento (RM 6.5 ), Seafood Bento (RM 9 ), Chicken Katsu Don (RM 8 ), Tempura Soba (RM 7 ), Chicken Yaki Soba (RM 7 ), Vegetable Yaki Soba (RM 6 ), Zaru Soba (RM 6 ), Zaru Soba + Tempura (RM 7 ), Tempura Udon (RM 7 ), Chicken Yaki Udon (RM 7 ), Vegetable Yaki Udon (RM 6 ), Zaru Udon (RM 6 ), Zaru Udon + Tempura (RM 7 ), Chicken Teriyaki Lunch Set (Miso Soup) (RM 10 ), Tempura Lunch Set (Miso Soup) (RM 9 ), Vegetarian Lunch Set (Miso Soup) (RM 8 ), Chicken Teriyaki Dinner Set (Chawanmushi) (RM 10 ), Tempura Dinner Set (Chawanmushi) (RM 9 ), Vegetarian Dinner Set (Chawanmushi) (RM 8 )"]
         }
+        
+        
+        
+        
     ]}
