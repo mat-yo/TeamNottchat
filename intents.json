@@ -47,7 +47,11 @@
         },
         {
             "tag": "Cancel order",
+<<<<<<< HEAD
             "patterns": ["I would like to cancel order","I dont want to order this food","Return money","cancel order"],
+=======
+            "patterns": ["I would like to cancel order","I dont want to order this food","Return money"],
+>>>>>>> refs/remotes/origin/main
             "response": ["Your order has been cancelled sucessfully, would you mind to tell us why you want to cancel order?","So sorry that the restaurant already prepared your food and your order can't be cancelled, if you need further assistance please contact 07-1234567"]
         }
     
