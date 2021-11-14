@@ -6,6 +6,8 @@ import os
 
 import nltk
 from nltk.stem import WordNetLemmatizer
+from data import *
+from tabulate import tabulate
 
 from tensorflow.keras.models import load_model
 
@@ -45,7 +47,7 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent':classes[r[0]], 'probability': str(r[1])})
 
-    print(return_list)
+    #print(return_list)
     return return_list
 
 
@@ -64,7 +66,18 @@ greet()
 while True:
     message = input("")
     ints = predict_class(message.lower())
+    print(ints[0]['intent'])
     res = get_response(ints, intents)
     
     print()
     print(res)
+    menu = categorize(ints[0]['intent'])
+
+    if menu:
+        temp=[]
+        for i in menu:
+            temp.append([i[1],float(i[2])])
+
+        table = tabulate(temp, headers=['Food', 'Price (RM)'], tablefmt='orgtbl')
+        print(table)
+        print("Please make your order!!!")
