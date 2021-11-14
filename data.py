@@ -13,8 +13,12 @@ def categorize(intent):
     korean_food = []
     japanese_food = []
     beverage = []
+    delivery=[]
 
     for i in long_arr:
+        if (i[3] == "yes"):
+            delivery.append(i)
+
         #print(i[0])
         if (i[0] == "Malay"):
             malay_food.append(i)
@@ -34,6 +38,8 @@ def categorize(intent):
     print(korean_food,"\n----------------")
     print(japanese_food,"\n----------------")
     """
+    
+    #print(delivery,"\n----------------")
 
     if (intent == "Malay"):
         return malay_food
@@ -45,5 +51,7 @@ def categorize(intent):
         return korean_food
     elif (intent == "Japanese"):
         return japanese_food
+    elif (intent == "delivery"):
+        return delivery
     else:
         return False

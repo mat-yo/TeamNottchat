@@ -21,6 +21,7 @@ model = load_model('chatbot_model.model')
 
 def greet():
     print("Hello!!! How can I help you?")
+    print("Order food/Order Status/Cancel Order")
 
 def clean_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -66,7 +67,7 @@ greet()
 while True:
     message = input("")
     ints = predict_class(message.lower())
-    print(ints[0]['intent'])
+    #print(ints[0]['intent'])
     res = get_response(ints, intents)
     
     print()
@@ -76,8 +77,8 @@ while True:
     if menu:
         temp=[]
         for i in menu:
-            temp.append([i[1],float(i[2])])
+            temp.append([i[1],float(i[2]),i[3]])
 
-        table = tabulate(temp, headers=['Food', 'Price (RM)'], tablefmt='orgtbl')
+        table = tabulate(temp, headers=['Food', 'Price (RM)','Delivery'], tablefmt='orgtbl')
         print(table)
-        print("Please make your order!!!")
+        print("Please make your order!!! (specify food name)")
