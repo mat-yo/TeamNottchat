@@ -49,10 +49,26 @@
             "tag": "Cancel order",
             "patterns": ["I would like to cancel order","I dont want to order this food","Return money","cancel order"],
             "response": ["Your order has been cancelled sucessfully, would you mind to tell us why you want to cancel order?","So sorry that the restaurant already prepared your food and your order can't be cancelled, if you need further assistance please contact 07-1234567"]
+        },
+        {
+            "tag": "place order",
+            "patterns": ["i would like to order a nasi lemak, less spicy"],
+            "response": ["Which categories of food do you want? Malay, Mamak, Beverage , Korean or Japanese?"]
+        },
+        {
+            "tag": "Payment method",
+            "patterns": ["Cash on delivery","Debit card","Credit card"],
+            "response": ["Thank you and have a nice day!"]
+        },
+        {
+            "tag": "About us",
+            "patterns": ["who we are","What do we do"],
+            "response": ["We started with one goal in mind: to be the most convenient food delivery service in the country","We link you to the vendors for you to order a variety of prepared meals."]
+        },
+        {
+            "tag": "Contactless delivery policy",
+            "patterns": ["Ensure safety and success during contactless delivery"],
+            "response": ["To ensure safety measures, all delivery drivers are required to wear safety equipment when dropping off an order at its destination. This includes: 1. Wearing gloves. 2. Wearing a face mask that covers mouth and nose. 3. Regular sanitize delivery trucks. 4. Do temperature checks of all delivery employees before starting and at the end of their shift. "]
         }
-    
-        
-        
-        
         
     ]}
