@@ -5,7 +5,8 @@ Nottchat bot is a chat bot created by Team Nottchat to order food
 Read the [GPU support guide](https://www.tensorflow.org/install/gpu) to set up a CUDA®-enabled GPU card on Ubuntu or Windows
 
 ## Installation
-Run install.bat file
+- Clone the file from https://github.com/mat-yo/TeamNottchat.git
+- Run install.bat file
 
 ## Usage
 Run main.py file
