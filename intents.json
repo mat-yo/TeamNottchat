@@ -37,27 +37,27 @@
         
         {
             "tag": "Order status for delivery",
-            "patterns": ["I would like to know order status","Where is my food","Where's my food","Where are you?"],
+            "patterns": ["I would like to know order status","Where is my food","Where's my food","Where are you?","order status"],
             "response": ["Your rider is on the way , it will arrive in around 5 minutes","Your food is preparing.....","Rider already picked up your food and on the way to deliver the food to you"]
         },
         {
             "tag": "Order status for pick up",
-            "patterns": ["I would like to know is my food ready for pick up?","Is my food done prepared?"],
+            "patterns": ["I would like to know is my food ready for pick up?","Is my food done prepared?","order status"],
             "response": ["Your food already done, can pick up now","The restaurant is preparing your food, sorry for the inconvenience caused"]
         },
         {
             "tag": "Cancel order",
-            "patterns": ["I would like to cancel order","I dont want to order this food","Return money"],
+            "patterns": ["I would like to cancel order","I dont want to order this food","Return money","cancel order"],
             "response": ["Your order has been cancelled sucessfully, would you mind to tell us why you want to cancel order?","So sorry that the restaurant already prepared your food and your order can't be cancelled, if you need further assistance please contact 07-1234567"]
         },
         {
             "tag": "Payment method",
             "patterns": ["Cash on delivery","Debit card","Credit card"],
-            "response": ["Thank you and have a nice day!"]
+            "response": ["Order confirmed!!! (Order ID:0187766462). Thank you and have a nice day!"]
         },
         {
             "tag": "About us",
-            "patterns": ["who we are","What do we do",],
+            "patterns": ["who we are","What do we do"],
             "response": ["We started with one goal in mind: to be the most convenient food delivery service in the country","We link you to the vendors for you to order a variety of prepared meals."]
         },
         {

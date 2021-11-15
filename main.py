@@ -3,6 +3,7 @@ import json
 import pickle
 import numpy
 import os
+import time
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -48,7 +49,6 @@ def predict_class(sentence):
     for r in results:
         return_list.append({'intent':classes[r[0]], 'probability': str(r[1])})
 
-    #print(return_list)
     return return_list
 
 
@@ -67,12 +67,22 @@ greet()
 while True:
     message = input("")
     ints = predict_class(message.lower())
-    #print(ints[0]['intent'])
     res = get_response(ints, intents)
     
     print()
-    print(res)
+    
     menu = categorize(ints[0]['intent'])
+
+
+    if (ints[0]['intent']!="delivery"):
+        print(res)
+        if ((ints[0]['intent']=="Payment method") or (ints[0]['intent']=="Order status for delivery") or (ints[0]['intent']=="Order status for pick up") or (ints[0]['intent']=="Cancel order")):
+            print()
+            time.sleep(1.5)
+            print()
+            time.sleep(1.5)
+            os.system('cls')
+            greet()
 
     if menu:
         temp=[]

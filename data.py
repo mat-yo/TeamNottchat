@@ -19,7 +19,6 @@ def categorize(intent):
         if (i[3] == "yes"):
             delivery.append(i)
 
-        #print(i[0])
         if (i[0] == "Malay"):
             malay_food.append(i)
         elif (i[0] == "Mamak"):
@@ -30,16 +29,6 @@ def categorize(intent):
             korean_food.append(i)
         elif (i[0] == "Japanese"):
             japanese_food.append(i)
-
-    """      
-    print(malay_food,"\n----------------")
-    print(mamak_food,"\n----------------")
-    print(beverage,"\n----------------")
-    print(korean_food,"\n----------------")
-    print(japanese_food,"\n----------------")
-    """
-    
-    #print(delivery,"\n----------------")
 
     if (intent == "Malay"):
         return malay_food
