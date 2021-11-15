@@ -76,6 +76,11 @@ def get_response(intents_list,intents_json):
             break
     return result
 
+def obtain_method():
+    print("You want to pick up or delivery?")
+    ans = input("")
+    print()
+
 # clear console
 os.system('cls')
 greet()
@@ -95,10 +100,10 @@ while True:
 
 
     if (ints[0]['intent']!="delivery"):
-        # print response if not check for food with delivery available
+        # print response if not check for food with delivery available 
         print(res)
         # greet if end of conversation
-        if ((ints[0]['intent']=="Payment method") or (ints[0]['intent']=="Order status for delivery") or (ints[0]['intent']=="Order status for pick up") or (ints[0]['intent']=="Cancel order") or (ints[0]['intent']=="recommend")):
+        if ((ints[0]['intent']=="Payment method") or (ints[0]['intent']=="Order status for delivery") or (ints[0]['intent']=="Contactless delivery policy") or (ints[0]['intent']=="Order status for pick up") or (ints[0]['intent']=="Cancel order") or (ints[0]['intent']=="recommend") or (ints[0]['intent']=="About us")):
             print()
             time.sleep(1.5)
             print()
@@ -114,4 +119,6 @@ while True:
         # convert array to table
         table = tabulate(temp, headers=['Food', 'Price (RM)','Delivery'], tablefmt='orgtbl')
         print(table)
+        obtain_method()
         print("Please make your order!!! (specify food name)")
+        
