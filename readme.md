@@ -6,10 +6,10 @@ Read the [GPU support guide](https://www.tensorflow.org/install/gpu) to set up a
 
 ## Installation
 - Clone the file from https://github.com/mat-yo/TeamNottchat.git
-- Run install.bat file
+- Run TeamNottchat_install.bat file
 
 ## Usage
-Run main.py file
+Run TeamNottchat_main.py file
 
 ## License
 This program is license free. Feel free to modify and use it.
